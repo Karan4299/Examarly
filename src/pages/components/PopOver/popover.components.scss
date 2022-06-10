@@ -1,0 +1,116 @@
+.popover-main-container{
+    position: absolute;
+    .popover-hori-3-bars{
+        height: 4px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+
+        .popover-bar{
+            height: 100%;
+            width: 32%;
+            cursor: pointer;
+        }
+    }
+
+    .popover-bottom-panel{
+        .popover-vertical-line{
+            width: 2px;
+            height: 44px;
+            background-image: linear-gradient(to bottom, #FC5D73 , #FF993F);
+            border-radius: 1px;
+        }
+
+        .popover-bottom-modal{
+            width: 260px;
+            height: 293.64px;
+            background-image: linear-gradient(to bottom right, #FC5D73 , #FF993F);
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 10% 35% 35% 20%;
+            color: white;
+            overflow: hidden;
+
+            .popover-bottom-modal-container {
+                padding: 0px 10px;
+                &.cancel {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin-top: 5px;
+
+                    svg{
+                        width: 15.49px;
+                        cursor: pointer;
+                    }
+                }
+
+                &.title-description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 10px 20px;
+                    .popover-bottom-modal-title{
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    .popover-bottom-modal-description{
+                        font-size: 14px;
+                        width: 80%;
+                    }
+                }
+
+                &.progress {
+                    background-color: white;
+                    width: 100%;
+                    height: 100%;
+                    color: black;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 50% 50%;
+                    font-size: 12px;
+                    padding: 15px 8px;
+
+                    .popover-bottom-modal-progress{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        font-weight: 600;
+
+                        .popover-bottom-modal-title{
+                            width: 90%;
+                        }
+                    }
+                }
+
+                &.finish {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    .popover-bottom-finish-button{
+                        width: 82px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;
+                        background-color: white;
+                        color: black;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,29 @@
+.progress-bar-main-container{
+    width: 110px;
+    height: 4px;
+    background-color: #ECE6E2;
+    margin-top: 5px;
+    border-radius: 2px;
+    position: relative;
+
+    .progress-bar-background-progress-bar{
+        height: 100%;
+        border-radius: inherit;
+        position: absolute;
+    }
+
+    .progress-bar-top-progress-bar-framer{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+        border-radius: 2px;
+
+        .progress-bar-top-progress-bar-item{
+            height: 100%;
+            width: 2px;
+            background-color: white;
+        }
+    }
+}

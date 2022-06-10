@@ -1,0 +1,22 @@
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+    position: relative;
+
+    .history-tab{
+        margin-left: 13px;
+        width: 107px;
+        height: 32px;
+        cursor: pointer;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to right, #FC5D73 , #FF993F);
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+}
